@@ -91,7 +91,15 @@ public class Autonomo {
         
     }
     public void status (){
-        System.out.println(getNome());
+        if (getCadastro() == true){
+        System.out.printf(getNome(),"\n"getCpf(),"\n",getTelefone(),"\n",getEnd(),"\n");
+            System.out.println("CADASTRO ATIVO");
+        }else{
+            System.out.printf(getNome(),"\n"getCpf(),"\n",getTelefone(),"\n",getEnd(),"\n");
+            System.out.println("CADASTRO INATIVO");
+        
+        }
+        
     }
 
         
